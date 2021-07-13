@@ -1,0 +1,27 @@
+{
+  "name": "clang-tidy-linter-action",
+  "version": "1.0.0",
+  "description": "clang-tidy linter for GitHub Actions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "js-yaml": "^4.0.2",
+    "line-column": "^1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compnerd/clang-tidy-linter-action.git"
+  },
+  "keywords": [],
+  "author": "Saleem Abdulrasool <compnerd@compnerd.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/compnerd/clang-tidy-linter-action/issues"
+  },
+  "homepage": "https://github.com/compnerd/clang-tidy-linter-action"
+}

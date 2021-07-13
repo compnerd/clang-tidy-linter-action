@@ -1,0 +1,13 @@
+name: 'clang-tidy-lint'
+description: 'Apply clang-tidy over changed sources'
+inputs:
+  github-token:
+    description: 'GitHub API Token'
+    required: true
+  build:
+    description: 'Path to the build tree with the compilation database'
+    required: true
+    default: 'build'
+runs:
+  using: 'node12'
+  main: 'index.js'
