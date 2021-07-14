@@ -17,6 +17,11 @@ async function check(build, file) {
     spawnSync("clang-tidy", ["-p", build, "--export-files", replacements, file]);
 
     try {
+      if (!fs.existsSync(replacements)) {
+        resolve();
+        return;
+      }
+
       // TODO(compnerd) use async read
       const data = fs.readFileSync(replacements, {encoding: 'utf-8'});
       if (data === null)
